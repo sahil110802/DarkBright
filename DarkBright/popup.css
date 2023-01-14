@@ -1,0 +1,84 @@
+h1{
+    font-family: 'Sansita Swashed', cursive;
+}
+body{
+    min-width: 300px;
+    text-align: center;
+}
+.dark{
+    color: darkblue;
+}
+.bright{
+    color: lightblue;
+}
+p, .button{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.button{
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    height: 2rem;
+    width: 4.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.row{
+    padding: 0 0.2rem;
+    pointer-events: none ;
+
+}
+.circle{
+    top: 0;
+    left: 0;
+    background-color: darkblue;
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    pointer-events: none ;
+}
+@keyframes MoveCircleRight{
+    from{
+        left: 0;
+        background-color: darkblue;
+    }
+    to{
+        left:100%;
+        background-color: lightblue;
+        transform: translateX(-100%);
+    }
+}
+@keyframes MoveCircleLeft{
+    
+    from{
+        left: 100%;
+        background-color: lightblue;
+        transform: translateX(-100%);
+    }
+    to{
+        left: 0;
+        background-color: darkblue;
+    }
+}
+
+@keyframes BackgroundBlack{
+    to{
+        background-color: lightblue;
+    }
+    from{
+        background-color: darkblue;
+    }
+}
+@keyframes BackgroundWhite{
+    to{
+        background-color: darkblue;
+    }
+    from{
+        background-color: lightblue;
+    }
+}

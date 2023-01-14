@@ -1,0 +1,19 @@
+{
+    "name":"DarkBright",
+    "description":"Go to dark to bright mode and vice versa",
+    "version":"1.0.0",
+    "manifest_version":2,
+    "background":{
+        "scripts":["popup.js"],
+        "persistent":true
+    },
+    "browser_action":{
+        "default_title":"DarkBright.io",
+        "default_popup":"popup.html"
+    },
+    "permissions":[
+        "https://*/*",
+        "http://*/*",
+        "tabs"
+    ]
+}
